@@ -1,7 +1,8 @@
 #include <SoftwareSerial.h>
-
-SoftwareSerial BT(10, 11); // RX, TX
 #define MQ_2 A0
+#define BUZZER 6
+SoftwareSerial BT(10, 11); // RX, TX
+
 short int LED_PIN = 13;
 
 void setup() {
@@ -33,7 +34,9 @@ void loop() {
   if(sensor_value >= 300){
     send_alert();
     digitalWrite(LED_PIN, HIGH);
+    digitalWrite(BUZZER, HIGH);
     delay(5000);
+    digitalWrite(BUZZER, LOW);
     digitalWrite(LED_PIN, LOW);
   }
   delay(1000);
