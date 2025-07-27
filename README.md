@@ -256,7 +256,3 @@ The GUI can be enhanced with additional controls (e.g., threshold sliders, senso
 ## License
 
 This project is licensed under the GNU GPL V3.0 License. See the LICENSE file for details.
-
-## Contact
-
-For questions or contributions, please contact the project maintainer at [your-email@example.com].
