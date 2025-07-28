@@ -6,6 +6,37 @@ The Gas Detection and Alert System (GDAS) is a highly modular and extensible sol
 
 The system's modular architecture allows seamless integration of additional components, such as LoRa modules for long-range communication, additional sensors, or alternative alert mechanisms. This extensibility makes GDAS adaptable to diverse use cases, from small-scale home monitoring to large-scale industrial deployments.
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Hardware Requirements](#hardware-requirements)
+    - [Core Components](#core-components)
+    - [Optional (for Extensibility)](#optional-for-extensibility)
+4. [Software Requirements](#software-requirements)
+    - [Required Software](#required-software)
+    - [Python Libraries](#python-libraries)
+    - [Operating System](#operating-system)
+    - [Optional (for Extensibility)](#optional-for-extensibility-1)
+5. [Modularity and Extensibility](#modularity-and-extensibility)
+    - [Hardware Modularity](#hardware-modularity)
+    - [Software Extensibility](#software-extensibility)
+    - [Scalability](#scalability)
+6. [Installation and Setup](#installation-and-setup)
+    - [Hardware Setup](#hardware-setup)
+    - [Software Setup](#software-setup)
+7. [Usage](#usage)
+8. [File Structure](#file-structure)
+9. [Code Explanation](#code-explanation)
+    - [Arduino Code](#arduino-code-mes_gas_sensor_codeino)
+    - [Python Monitoring Script](#python-monitoring-script-monitoringpy)
+    - [GUI Script](#gui-script-guipy)
+10. [Limitations](#limitations)
+11. [Future Improvements](#future-improvements)
+12. [Troubleshooting](#troubleshooting)
+13. [License](#license)
+
+---
+
 ## Features
 
 - **Real-Time Gas Detection**: Utilizes the MQ-2 gas sensor to detect hazardous gas levels (e.g., LPG, methane, smoke) with a threshold-based alert system.
